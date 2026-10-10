@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official Privacy Policy for Velvo Arrow mobile game - 100% offline, zero data collection.">
     <meta name="theme-color" content="#071311">
-    <title>Privacy Policy | Velvo Arrow</title>
+    <title>Privacy Policy - Velvo Arrow</title>
+    <!-- Exact Game Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Exact Palette from lib/constants/app_colors.dart */
         :root {
-            --bg-base: #071311;
-            --bg-surface: #10221E;
-            --bg-elevated: #16302A;
-            --primary: #49F2C2;
-            --secondary: #B8FFE9;
-            --accent: #D7FF5F;
-            --text-primary: #F4FFF9;
-            --text-secondary: #9CBDB2;
-            --border: rgba(73, 242, 194, 0.22);
-            --border-glow: rgba(73, 242, 194, 0.4);
-            --shadow-glow: rgba(73, 242, 194, 0.15);
+            --app-background: #071311;
+            --app-surface: #10221E;
+            --app-surface-elevated: #16302A;
+            --app-primary: #49F2C2;
+            --app-secondary: #B8FFE9;
+            --app-accent: #D7FF5F;
+            --app-text-primary: #F4FFF9;
+            --app-text-secondary: #9CBDB2;
+            --app-error: #FF6B7A;
+            --app-on-primary: #071311;
+            --app-border: rgba(73, 242, 194, 0.2);
+            --app-primary-glow: rgba(73, 242, 194, 0.3);
+            --app-heart-empty: #2C4A42;
         }
 
         * {
@@ -31,307 +35,300 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--bg-base);
-            color: var(--text-primary);
-            line-height: 1.68;
-            padding: 32px 16px;
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--app-background);
+            color: var(--app-text-primary);
+            line-height: 1.65;
+            padding: 36px 16px;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .wrapper {
+        .container {
             width: 100%;
-            max-width: 860px;
+            max-width: 840px;
         }
 
-        /* Header Card */
+        /* Header Card with Game Branding */
         .header-card {
-            background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(16, 34, 30, 0.85) 100%);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 36px 32px;
+            background-color: var(--app-surface);
+            border: 1.5px solid var(--app-border);
+            border-radius: 24px;
+            padding: 32px;
             margin-bottom: 24px;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), 0 0 24px var(--shadow-glow);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 25px var(--app-primary-glow);
             display: flex;
             align-items: center;
             gap: 24px;
             flex-wrap: wrap;
         }
 
-        .logo-box {
-            width: 84px;
-            height: 84px;
-            background-color: var(--bg-elevated);
-            border: 2px solid var(--primary);
-            border-radius: 20px;
+        .logo-frame {
+            width: 96px;
+            height: 96px;
+            border-radius: 22px;
+            background-color: var(--app-surface-elevated);
+            border: 2px solid var(--app-primary);
+            box-shadow: 0 0 24px var(--app-primary-glow);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 0 20px rgba(73, 242, 194, 0.35);
-            flex-shrink: 0;
             overflow: hidden;
+            flex-shrink: 0;
         }
 
-        .logo-box img {
+        .logo-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
         }
 
-        .logo-svg {
-            width: 50px;
-            height: 50px;
-            stroke: var(--primary);
-            stroke-width: 6;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            fill: none;
-        }
-
-        .header-info {
+        .header-text {
             flex: 1;
             min-width: 260px;
         }
 
         .app-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2rem;
+            font-size: 2.1rem;
             font-weight: 700;
-            color: var(--primary);
-            letter-spacing: 0.5px;
+            color: var(--app-primary);
+            letter-spacing: 1px;
             margin-bottom: 4px;
+            text-transform: uppercase;
         }
 
         .app-tagline {
-            color: var(--text-secondary);
-            font-size: 0.98rem;
-            margin-bottom: 12px;
+            color: var(--app-text-secondary);
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
         }
 
-        .meta-badges {
+        .badges-row {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
 
         .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background-color: rgba(73, 242, 194, 0.1);
-            color: var(--primary);
-            border: 1px solid rgba(73, 242, 194, 0.25);
-            padding: 4px 12px;
+            background-color: rgba(73, 242, 194, 0.12);
+            color: var(--app-primary);
+            border: 1px solid var(--app-border);
+            padding: 5px 14px;
             border-radius: 999px;
             font-size: 0.82rem;
             font-weight: 600;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.4px;
         }
 
         .badge.accent {
             background-color: rgba(215, 255, 95, 0.12);
-            color: var(--accent);
-            border-color: rgba(215, 255, 95, 0.3);
+            color: var(--app-accent);
+            border-color: rgba(215, 255, 95, 0.35);
         }
 
-        /* Content Container */
+        /* Content Card */
         .content-card {
-            background-color: var(--bg-surface);
-            border: 1px solid var(--border);
-            border-radius: 20px;
+            background-color: var(--app-surface);
+            border: 1.5px solid var(--app-border);
+            border-radius: 24px;
             padding: 40px 36px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
         }
 
-        /* Quick Summary Box */
-        .summary-box {
-            background-color: var(--bg-elevated);
-            border-left: 4px solid var(--primary);
-            border-radius: 12px;
-            padding: 20px 24px;
-            margin-bottom: 36px;
+        /* Key Highlights Box */
+        .highlight-box {
+            background-color: var(--app-surface-elevated);
+            border-left: 4px solid var(--app-primary);
+            border-radius: 14px;
+            padding: 22px 24px;
+            margin-bottom: 34px;
         }
 
-        .summary-box h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            color: var(--primary);
-            font-size: 1.15rem;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .highlight-box h3 {
+            color: var(--app-primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
 
-        .summary-box ul {
-            list-style: none;
+        .highlight-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 10px;
+            list-style: none;
         }
 
-        .summary-box li {
-            color: var(--text-primary);
-            font-size: 0.92rem;
+        .highlight-grid li {
+            color: var(--app-text-primary);
+            font-size: 0.94rem;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .summary-box li::before {
+        .highlight-grid li::before {
             content: "✓";
-            color: var(--accent);
-            font-weight: bold;
+            color: var(--app-accent);
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
-        /* Headings & Text */
+        /* Section Headings */
         h2 {
-            font-family: 'Space Grotesk', sans-serif;
             font-size: 1.45rem;
             font-weight: 700;
-            color: var(--secondary);
+            color: var(--app-secondary);
             margin-top: 36px;
             margin-bottom: 14px;
             padding-bottom: 8px;
-            border-bottom: 1px solid rgba(73, 242, 194, 0.15);
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            border-bottom: 1px solid var(--app-border);
+            letter-spacing: 0.5px;
         }
 
         p {
-            color: var(--text-secondary);
-            font-size: 0.98rem;
+            color: var(--app-text-secondary);
+            font-size: 1rem;
             margin-bottom: 16px;
         }
 
         p strong, li strong {
-            color: var(--text-primary);
+            color: var(--app-text-primary);
         }
 
         ul {
-            margin-left: 20px;
-            margin-bottom: 18px;
-            color: var(--text-secondary);
+            margin-left: 22px;
+            margin-bottom: 20px;
         }
 
         li {
+            color: var(--app-text-secondary);
             margin-bottom: 8px;
-            font-size: 0.96rem;
+            font-size: 0.98rem;
         }
 
-        /* Data Safety Table */
-        .table-responsive {
+        /* Policy Compliance Table */
+        .table-wrap {
             overflow-x: auto;
-            margin: 20px 0 26px 0;
-            border-radius: 12px;
-            border: 1px solid var(--border);
+            margin: 22px 0 28px 0;
+            border-radius: 14px;
+            border: 1px solid var(--app-border);
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             text-align: left;
-            font-size: 0.92rem;
+            font-size: 0.94rem;
         }
 
         th {
-            background-color: var(--bg-elevated);
-            color: var(--primary);
-            font-family: 'Space Grotesk', sans-serif;
-            font-weight: 600;
+            background-color: var(--app-surface-elevated);
+            color: var(--app-primary);
+            font-weight: 700;
             padding: 14px 18px;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1.5px solid var(--app-border);
+            letter-spacing: 0.5px;
         }
 
         td {
             padding: 14px 18px;
             border-bottom: 1px solid rgba(73, 242, 194, 0.1);
-            color: var(--text-secondary);
+            color: var(--app-text-secondary);
         }
 
         tr:last-child td {
             border-bottom: none;
         }
 
-        .status-pill {
+        .pill-no {
             display: inline-block;
-            padding: 3px 10px;
+            padding: 4px 12px;
             border-radius: 999px;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: 700;
             background-color: rgba(73, 242, 194, 0.15);
-            color: var(--primary);
+            color: var(--app-primary);
+            letter-spacing: 0.5px;
         }
 
-        /* Contact Box */
-        .contact-box {
-            background: linear-gradient(135deg, var(--bg-elevated) 0%, rgba(22, 48, 42, 0.6) 100%);
-            border: 1px solid rgba(73, 242, 194, 0.3);
-            border-radius: 14px;
-            padding: 24px;
-            margin-top: 32px;
+        /* Developer Support Contact Card */
+        .contact-card {
+            background-color: var(--app-surface-elevated);
+            border: 1.5px solid var(--app-border);
+            border-radius: 18px;
+            padding: 26px;
+            margin-top: 36px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
         }
 
-        .contact-box h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            color: var(--accent);
-            font-size: 1.2rem;
+        .contact-card h3 {
+            color: var(--app-accent);
+            font-size: 1.25rem;
+            font-weight: 700;
             margin-bottom: 8px;
+            letter-spacing: 0.5px;
         }
 
-        .contact-link {
-            color: var(--primary);
-            font-weight: 600;
-            text-decoration: none;
+        .contact-card p {
+            margin-bottom: 14px;
+        }
+
+        .email-btn {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            margin-top: 6px;
-            padding: 8px 16px;
-            background-color: rgba(73, 242, 194, 0.1);
-            border: 1px solid rgba(73, 242, 194, 0.25);
-            border-radius: 8px;
-            transition: all 0.2s ease;
+            gap: 10px;
+            background-color: var(--app-primary);
+            color: var(--app-on-primary);
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 14px;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 20px var(--app-primary-glow);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
 
-        .contact-link:hover {
-            background-color: var(--primary);
-            color: var(--bg-base);
-            box-shadow: 0 0 16px var(--shadow-glow);
+        .email-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 28px rgba(73, 242, 194, 0.5);
         }
 
         /* Footer */
         footer {
             margin-top: 36px;
             text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.85rem;
             padding-bottom: 24px;
         }
 
         footer p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
+            font-size: 0.88rem;
+            color: var(--app-text-secondary);
             margin-bottom: 4px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
             body {
                 padding: 16px 12px;
             }
             .header-card {
                 padding: 24px 20px;
-                gap: 16px;
+                gap: 18px;
             }
             .content-card {
                 padding: 28px 20px;
             }
             .app-title {
-                font-size: 1.6rem;
+                font-size: 1.65rem;
+            }
+            .logo-frame {
+                width: 80px;
+                height: 80px;
             }
             h2 {
                 font-size: 1.25rem;
@@ -340,40 +337,35 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Header Card -->
+    <div class="container">
+        <!-- Header -->
         <header class="header-card">
-            <div class="logo-box">
-                <!-- Fallback to embedded SVG arrow icon if logo.png not in local directory -->
-                <img src="assets/icons/logo.png" alt="Velvo Arrow Logo" onerror="this.style.display='none'; document.getElementById('fallback-svg').style.display='block';">
-                <svg id="fallback-svg" class="logo-svg" viewBox="0 0 100 100" style="display: none;">
-                    <line x1="50" y1="86" x2="50" y2="14" />
-                    <line x1="20" y1="44" x2="50" y2="14" />
-                    <line x1="80" y1="44" x2="50" y2="14" />
-                </svg>
+            <div class="logo-frame">
+                <!-- Exact Game Icon: checks local root logo.png first, then assets/icons/logo.png -->
+                <img class="logo-img" src="logo.png" alt="Velvo Arrow Icon" onerror="this.src='assets/icons/logo.png';">
             </div>
-            <div class="header-info">
+            <div class="header-text">
                 <h1 class="app-title">Velvo Arrow</h1>
-                <p class="app-tagline">Think Fast. Shift Faster. — Mobile Reaction Game</p>
-                <div class="meta-badges">
-                    <span class="badge">Application ID: com.velvoarrow.com</span>
+                <p class="app-tagline">Think Fast. Shift Faster. — Offline Reaction Game</p>
+                <div class="badges-row">
+                    <span class="badge">Package: com.velvoarrow.com</span>
                     <span class="badge accent">Google Play Compliant</span>
-                    <span class="badge">100% Offline Game</span>
+                    <span class="badge">100% Offline</span>
                 </div>
             </div>
         </header>
 
         <!-- Main Content -->
         <main class="content-card">
-            <div class="summary-box">
+            <div class="highlight-box">
                 <h3>⚡ Policy Highlights at a Glance</h3>
-                <ul>
+                <ul class="highlight-grid">
                     <li>Zero Personal Data Collected</li>
-                    <li>No Ads & No Ad-Trackers</li>
+                    <li>No Third-Party Advertising</li>
                     <li>No Account or Login Required</li>
-                    <li>Scores Saved Strictly Locally</li>
-                    <li>Safe for All Age Groups</li>
-                    <li>No Sensitive Device Permissions</li>
+                    <li>Best Scores Saved Strictly On-Device</li>
+                    <li>Safe for All Age Groups (COPPA Compliant)</li>
+                    <li>Zero Dangerous Android Permissions</li>
                 </ul>
             </div>
 
@@ -383,42 +375,39 @@
             </p>
 
             <p>
-                This Privacy Policy describes the practices of <strong>BBee Enterprise</strong> ("we", "our", or "us") regarding 
-                the collection, use, and disclosure of information when you use our mobile game, <strong>Velvo Arrow</strong> 
-                (Package ID: <code>com.velvoarrow.com</code>) available on Google Play.
+                This Privacy Policy outlines how <strong>BBee Enterprise</strong> ("we", "our", or "us") protects your privacy 
+                when you install and play <strong>Velvo Arrow</strong> (Package ID: <code>com.velvoarrow.com</code>) on Android devices.
             </p>
 
-            <h2>1. Zero Data Collection Policy</h2>
+            <h2>1. Zero Personal Data Collection</h2>
             <p>
-                Velvo Arrow is crafted with a privacy-by-design architecture. We believe high-speed reflex gameplay should never 
-                require compromising your personal data.
+                Velvo Arrow is built as an offline, single-player arcade game. We do not collect, monitor, transmit, or monetize any of your personal details:
             </p>
             <ul>
-                <li><strong>No Personal Information:</strong> We do not collect names, email addresses, phone numbers, postal addresses, or government identifiers.</li>
-                <li><strong>No Device Identifiers:</strong> We do not gather or record IMEI numbers, MAC addresses, Android Advertising IDs (AAID), or hardware serials.</li>
-                <li><strong>No Location Data:</strong> We do not collect, monitor, or access your precise or approximate GPS location.</li>
-                <li><strong>No Biometric Data:</strong> No biometric sensors or facial recognition data are ever accessed.</li>
+                <li><strong>No Personal Identifiers:</strong> We do not ask for or collect names, email addresses, phone numbers, or mailing addresses.</li>
+                <li><strong>No Device Hardware Identifiers:</strong> We do not read or record your IMEI, MAC address, Android Advertising ID (AAID), or hardware serials.</li>
+                <li><strong>No Location Tracking:</strong> We do not access or determine your precise or coarse geographic location.</li>
+                <li><strong>No Biometric or Media Access:</strong> We never access your camera, microphone, photos, media gallery, or device files.</li>
             </ul>
 
-            <h2>2. Local Device Storage (On-Device Data Only)</h2>
+            <h2>2. Local Device Storage (On-Device Preferences Only)</h2>
             <p>
-                Velvo Arrow saves minimal game progression solely on your physical device via standard Android <code>SharedPreferences</code>:
+                To provide a seamless arcade experience, Velvo Arrow stores only minimal gameplay settings strictly on your local device using Android <code>SharedPreferences</code>:
             </p>
             <ul>
-                <li><strong>Your Best Score:</strong> Kept locally so you can track your personal record.</li>
-                <li><strong>Sound Setting (ON/OFF):</strong> Kept locally to remember your audio preference.</li>
-                <li><strong>Vibration Setting (ON/OFF):</strong> Kept locally to remember your tactile feedback preference.</li>
+                <li><strong>Best Score:</strong> Stored locally so you can track your personal high score and combo streak.</li>
+                <li><strong>Sound Toggle (ON/OFF):</strong> Stored locally to remember your audio preference.</li>
+                <li><strong>Vibration Toggle (ON/OFF):</strong> Stored locally to remember your haptic feedback preference.</li>
             </ul>
             <p>
-                <strong>Important:</strong> This data remains isolated within your device's sandbox. It is never transmitted across the network, 
-                never backed up to our servers, and never shared with third parties.
+                <strong>Privacy Guarantee:</strong> This data never leaves your device sandbox, is never sent to any external server or cloud database, and is never shared with third parties.
             </p>
 
-            <h2>3. Google Play Data Safety Declaration Matrix</h2>
+            <h2>3. Google Play Data Safety Compliance Matrix</h2>
             <p>
-                For complete transparency in accordance with Google Play Developer Policies:
+                The table below summarizes our compliance with the Google Play Data Safety questionnaire:
             </p>
-            <div class="table-responsive">
+            <div class="table-wrap">
                 <table>
                     <thead>
                         <tr>
@@ -430,92 +419,93 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Personal Information</strong> (Name, Email)</td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td><span class="status-pill">NO</span></td>
+                            <td><strong>Personal Information</strong> (Name, Email, Phone)</td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td><span class="pill-no">NO</span></td>
                             <td>None</td>
                         </tr>
                         <tr>
-                            <td><strong>Financial Information</strong> (Cards, Purchases)</td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td>None (Free Game)</td>
+                            <td><strong>Financial Information</strong> (Purchases, Cards)</td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td>None (100% Free Game)</td>
                         </tr>
                         <tr>
-                            <td><strong>Location Data</strong> (GPS / IP)</td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td><span class="status-pill">NO</span></td>
+                            <td><strong>Location Data</strong> (GPS, IP Location)</td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td><span class="pill-no">NO</span></td>
                             <td>None</td>
                         </tr>
                         <tr>
-                            <td><strong>Device or Other IDs</strong> (AAID, Android ID)</td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td><span class="status-pill">NO</span></td>
+                            <td><strong>Device / Other IDs</strong> (Advertising ID, Android ID)</td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td><span class="pill-no">NO</span></td>
                             <td>None</td>
                         </tr>
                         <tr>
-                            <td><strong>Game Progress</strong> (Best Score, Audio Settings)</td>
-                            <td><span class="status-pill">NO</span></td>
-                            <td><span class="status-pill">NO</span></td>
+                            <td><strong>Game Progress</strong> (Best Score, Sound Settings)</td>
+                            <td><span class="pill-no">NO</span></td>
+                            <td><span class="pill-no">NO</span></td>
                             <td>Local Device Storage Only</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h2>4. No Advertisements & No Third-Party SDKs</h2>
+            <h2>4. No Advertisements & No Tracking SDKs</h2>
             <p>
                 Velvo Arrow contains:
             </p>
             <ul>
-                <li><strong>Zero Advertisements:</strong> No banner ads, interstitial popups, rewarded video ads, or tracking pixels.</li>
-                <li><strong>Zero Analytics SDKs:</strong> No Firebase Analytics, AppsFlyer, Facebook SDK, or third-party behavioral trackers.</li>
+                <li><strong>Zero Ads:</strong> No banner ads, interstitial pop-ups, rewarded videos, or ad trackers.</li>
+                <li><strong>Zero Analytics SDKs:</strong> No Firebase Analytics, AppsFlyer, Unity Ads, Facebook SDK, or behavioral tracking libraries.</li>
             </ul>
 
             <h2>5. Device Permissions</h2>
             <p>
-                The game requires <strong>zero dangerous Android permissions</strong>. It does not ask for:
+                The application requests <strong>zero dangerous permissions</strong> in its Android Manifest. It does not require:
             </p>
             <ul>
                 <li>No Camera or Microphone access.</li>
-                <li>No Contacts or Calendar access.</li>
-                <li>No Storage, Media, or Photo gallery read/write permissions.</li>
-                <li>No Internet permission (the game functions 100% offline).</li>
+                <li>No Contacts, Phone State, or Account permissions.</li>
+                <li>No Storage, Media, or Photos read/write permissions.</li>
+                <li>No Internet permission (the game is designed to run 100% offline).</li>
             </ul>
 
             <h2>6. Children’s Privacy (COPPA & GDPR-K Compliance)</h2>
             <p>
-                Velvo Arrow is suitable for players of all ages, including children. Because the game collects 
-                <strong>no personal information whatsoever</strong>, it is fully compliant with the 
+                Velvo Arrow is family-friendly and safe for players of all ages, including children under 13. Because the game collects 
+                <strong>no personal data whatsoever</strong>, it fully satisfies the requirements of the 
                 <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the 
                 <strong>General Data Protection Regulation (GDPR)</strong>.
             </p>
 
-            <h2>7. Data Deletion & User Control</h2>
+            <h2>7. User Control & Data Deletion</h2>
             <p>
-                Since all scores and settings are stored locally on your device, you have complete control over your data:
+                Because all game progress is stored strictly on your local device, you retain total control over your data:
             </p>
             <ul>
-                <li>You can clear all saved data at any time via <strong>Android Settings → Apps → Velvo Arrow → Storage → Clear Storage</strong>.</li>
-                <li>Uninstalling the game automatically and permanently deletes all local preferences and scores from your device.</li>
+                <li>You can reset your score and settings at any time via <strong>Android Settings → Apps → Velvo Arrow → Storage → Clear Storage</strong>.</li>
+                <li>Uninstalling the game permanently erases all locally saved preferences and scores from your device.</li>
             </ul>
 
-            <h2>8. Changes to This Privacy Policy</h2>
+            <h2>8. Policy Modifications</h2>
             <p>
-                We may periodically update this policy to reflect future feature releases or regulatory changes. 
-                Any modifications will be posted to this page with an updated "Last Updated" date.
+                We may update this policy if new features are introduced in future versions. Any modifications will be posted to this page with an updated "Last Updated" date.
             </p>
 
-            <h2>9. Contact Us & Developer Information</h2>
-            <p>
-                If you have any questions, suggestions, or concerns regarding this Privacy Policy or Velvo Arrow, please reach out directly:
-            </p>
-            <div class="contact-box">
-                <h3>BBee Enterprise</h3>
-                <p><strong>Developer Support:</strong> Velvo Arrow Team</p>
-                <p><strong>Support Email:</strong></p>
-                <a class="contact-link" href="mailto:bbeeenterprise3@gmail.com">
-                    ✉ bbeeenterprise3@gmail.com
+            <!-- Support & Contact Card -->
+            <div class="contact-card">
+                <h3>Developer Contact & Support</h3>
+                <p>
+                    For any questions, feedback, or support inquiries regarding this Privacy Policy or Velvo Arrow, please reach out to us:
+                </p>
+                <p>
+                    <strong>Developer / Organization:</strong> BBee Enterprise<br>
+                    <strong>Application Name:</strong> Velvo Arrow (<code>com.velvoarrow.com</code>)
+                </p>
+                <a class="email-btn" href="mailto:bbeeenterprise3@gmail.com">
+                    ✉ Contact Developer (bbeeenterprise3@gmail.com)
                 </a>
             </div>
         </main>
@@ -523,7 +513,7 @@
         <!-- Footer -->
         <footer>
             <p>© 2026 BBee Enterprise. All rights reserved.</p>
-            <p>Velvo Arrow is an independent casual reaction game for Android.</p>
+            <p>Velvo Arrow is an offline reaction arcade game for Android.</p>
         </footer>
     </div>
 </body>
